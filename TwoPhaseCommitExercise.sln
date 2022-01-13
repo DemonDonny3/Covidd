@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPhaseCommitExercise.Contracts", "TwoPhaseCommitExercise.Contracts\TwoPhaseCommitExercise.Contracts.csproj", "{71EB783B-F928-4ED1-9518-33A64A738155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoPhaseCommitExercise.Contracts", "TwoPhaseCommitExercise.Contracts\TwoPhaseCommitExercise.Contracts.csproj", "{71EB783B-F928-4ED1-9518-33A64A738155}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPhaseCommitExercise.Coordinator", "TwoPhaseCommitExercise.Coordinator\TwoPhaseCommitExercise.Coordinator.csproj", "{0301E9D3-0B8E-4185-8E61-52EBC9EC7BE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoPhaseCommitExercise.Coordinator", "TwoPhaseCommitExercise.Coordinator\TwoPhaseCommitExercise.Coordinator.csproj", "{0301E9D3-0B8E-4185-8E61-52EBC9EC7BE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPhaseCommitExercise.Customers", "TwoPhaseCommitExercise.Customers\TwoPhaseCommitExercise.Customers.csproj", "{E9A290B4-FA6E-4930-A7DA-50E534D9CEC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoPhaseCommitExercise.Customers", "TwoPhaseCommitExercise.Customers\TwoPhaseCommitExercise.Customers.csproj", "{E9A290B4-FA6E-4930-A7DA-50E534D9CEC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{71EB783B-F928-4ED1-9518-33A64A738155} = {71EB783B-F928-4ED1-9518-33A64A738155}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoPhaseCommitExercise.Products", "TwoPhaseCommitExercise.Products\TwoPhaseCommitExercise.Products.csproj", "{22E4FC46-6715-475D-A132-4333E3416762}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwoPhaseCommitExercise.Products", "TwoPhaseCommitExercise.Products\TwoPhaseCommitExercise.Products.csproj", "{22E4FC46-6715-475D-A132-4333E3416762}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

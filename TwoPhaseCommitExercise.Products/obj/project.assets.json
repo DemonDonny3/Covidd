@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Products\\TwoPhaseCommitExercise.Products.csproj",
+      "projectUniqueName": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Products\\TwoPhaseCommitExercise.Products.csproj",
       "projectName": "TwoPhaseCommitExercise.Products",
-      "projectPath": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Products\\TwoPhaseCommitExercise.Products.csproj",
+      "projectPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Products\\TwoPhaseCommitExercise.Products.csproj",
       "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Products\\obj\\",
+      "outputPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Products\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",

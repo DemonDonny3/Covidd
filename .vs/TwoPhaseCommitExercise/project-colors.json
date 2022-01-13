@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "71eb783b-f928-4ed1-9518-33a64a738155": {
+      "ProjectGuid": "71eb783b-f928-4ed1-9518-33a64a738155",
+      "DisplayName": "TwoPhaseCommitExercise.Contracts",
+      "ColorIndex": 0
+    },
+    "e9a290b4-fa6e-4930-a7da-50e534d9cec2": {
+      "ProjectGuid": "e9a290b4-fa6e-4930-a7da-50e534d9cec2",
+      "DisplayName": "TwoPhaseCommitExercise.Customers",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

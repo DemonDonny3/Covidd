@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj": {}
+    "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj": {
+    "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj",
         "projectName": "TwoPhaseCommitExercise.Contracts",
-        "projectPath": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj",
+        "projectPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj",
         "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
