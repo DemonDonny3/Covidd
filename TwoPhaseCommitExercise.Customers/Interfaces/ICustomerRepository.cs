@@ -6,6 +6,6 @@ namespace TwoPhaseCommitExercise.Customers.Interfaces
     {
         public bool IsLocked(int customerId);
         public bool Lock(int customerId);
-        public bool Spend(int customerId, decimal expenditure);
+        public decimal Spend(int customerId, decimal expenditure);
     }
 }

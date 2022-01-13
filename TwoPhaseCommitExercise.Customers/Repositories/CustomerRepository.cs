@@ -5,7 +5,7 @@ namespace TwoPhaseCommitExercise.Customers.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private List<Customer> customers = new List<Customer>();
+        private readonly List<Customer> customers = new();
         public bool IsLocked(int customerId)
         {
             var customer = customers.Find(c => c.Id == customerId);
@@ -13,17 +13,28 @@ namespace TwoPhaseCommitExercise.Customers.Repositories
             {
                 return customer.Locked;
             }
-            throw new ArgumentException();
+            throw new ArgumentException("Customer not found!");
         }
 
         public bool Lock(int customerId)
         {
-            throw new NotImplementedException();
+            var customer = customers.Find(c => c.Id == customerId);
+            if (customer is not null)
+            {
+                customer.Locked = true;
+                return customer.Locked;
+            }
+            throw new ArgumentException("Customer not found!");
         }
 
-        public bool Spend(int customerId, decimal expenditure)
+        public decimal Spend(int customerId, decimal expenditure)
         {
-            throw new NotImplementedException();
+            var customer = customers.Find(c => c.Id == customerId);
+            if (customer is null) throw new ArgumentException("Customer not found!");
+            if (customer.Funds < expenditure) throw new ArgumentException("Funds insufficient");
+
+            customer.Funds -= expenditure;
+            return customer.Funds;            
         }
     }
 }
