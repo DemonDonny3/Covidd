@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Customers\\TwoPhaseCommitExercise.Customers.csproj": {}
+    "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Customers\\TwoPhaseCommitExercise.Customers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Customers\\TwoPhaseCommitExercise.Customers.csproj": {
+    "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Customers\\TwoPhaseCommitExercise.Customers.csproj",
-        "projectName": "TwoPhaseCommitExercise.Customers",
-        "projectPath": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Customers\\TwoPhaseCommitExercise.Customers.csproj",
+        "projectUniqueName": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj",
+        "projectName": "TwoPhaseCommitExercise.Contracts",
+        "projectPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj",
         "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mateus\\source\\repos\\TwoPhaseCommitExercise\\TwoPhaseCommitExercise.Customers\\obj\\",
+        "outputPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,82 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Customers\\TwoPhaseCommitExercise.Customers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Customers\\TwoPhaseCommitExercise.Customers.csproj",
+        "projectName": "TwoPhaseCommitExercise.Customers",
+        "projectPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Customers\\TwoPhaseCommitExercise.Customers.csproj",
+        "packagesPath": "C:\\Users\\Mateus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Customers\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mateus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Mateus\\Source\\Repos\\Covidd\\TwoPhaseCommitExercise.Contracts\\TwoPhaseCommitExercise.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
