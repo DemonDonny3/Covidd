@@ -9,6 +9,6 @@ namespace TwoPhaseCommitExercise.Contracts.Products
     public class PrepareAck
     {
         public int ProductId { get; set; }
-        public bool Locked { get; set; } = false;
+        public bool Success { get; set; }
     }
 }

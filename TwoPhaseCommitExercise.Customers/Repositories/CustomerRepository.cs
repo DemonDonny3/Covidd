@@ -6,25 +6,20 @@ namespace TwoPhaseCommitExercise.Customers.Repositories
     public class CustomerRepository : ICustomerRepository
     {
         private readonly List<Customer> customers = new();
+        private readonly HashSet<int> lockedCustomers = new();
         public bool IsLocked(int customerId)
         {
-            var customer = customers.Find(c => c.Id == customerId);
-            if (customer is not null)
-            {
-                return customer.Locked;
-            }
-            throw new ArgumentException("Customer not found!");
+            return lockedCustomers.Contains(customerId);
         }
 
-        public bool Lock(int customerId)
+        public void Lock(int customerId)
         {
-            var customer = customers.Find(c => c.Id == customerId);
-            if (customer is not null)
-            {
-                customer.Locked = true;
-                return customer.Locked;
-            }
-            throw new ArgumentException("Customer not found!");
+            lockedCustomers.Add(customerId);
+        }
+
+        public void Unlock(int customerId)
+        {
+            lockedCustomers.Remove(customerId);
         }
 
         public decimal Spend(int customerId, decimal expenditure)

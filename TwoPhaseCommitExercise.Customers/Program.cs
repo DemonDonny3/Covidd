@@ -1,5 +1,7 @@
 using MassTransit;
 using TwoPhaseCommitExercise.Contracts.Coordinator;
+using TwoPhaseCommitExercise.Customers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -11,7 +13,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMassTransitHostedService();
 builder.Services.AddMassTransit(x =>
 {
-    x.AddConsumer<>();
 
     x.UsingRabbitMq((context, rabbitConfigurator) =>
     {
@@ -27,9 +28,9 @@ builder.Services.AddMassTransit(x =>
                 credentials.Password("");
             });
 
-        rabbitConfigurator.ReceiveEndpoint("orders_create_client", e =>
+        rabbitConfigurator.ReceiveEndpoint("customers-service", e =>
         {
-            e.Consumer<CreateClientEventConsumer>(context);
+            e.Consumer<PrepareCustomerConsumer>(context);
         });
     });
 
